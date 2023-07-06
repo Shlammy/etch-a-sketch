@@ -1,0 +1,6 @@
+.gridSquare {
+    background-color: red;
+    border: 5px solid;
+    height: 150px;
+    width: 150px;
+}
