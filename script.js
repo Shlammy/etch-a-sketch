@@ -1,5 +1,9 @@
 const grid = document.querySelector('.gridContainer');
 
+function resetPrompt() {
+    var userAnswer = prompt("How many squares per side? (Maximum 100)");
+    return userAnswer;
+}
 
 for(let i = 0; i < 16; i++){
     for(let j = 0; j < 16; j++){
@@ -9,6 +13,7 @@ for(let i = 0; i < 16; i++){
         grid.appendChild(spaces);
     }
 }
+
 
 
 
