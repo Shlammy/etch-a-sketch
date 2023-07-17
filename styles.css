@@ -11,10 +11,20 @@ h1 {
 
 body {
     display: flex;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-color: blanchedalmond;
+}
+
+.frame {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridSquare {
@@ -24,10 +34,14 @@ body {
     width: 30px;
 }
 
+:root {
+    --newNumberOfSquaresCss: 16;
+}
+
 .gridContainer {
     display: grid;
-    grid-template-columns: repeat(16, 0fr);
-    grid-template-rows: repeat(16, 0fr);
+    grid-template-columns: repeat(var(--newNumberOfSquaresCss), 0fr);
+    grid-template-rows: repeat(var(--newNumberOfSquaresCss), 0fr);
     height: auto;
     width: auto;
     box-shadow: 5px 5px 3px;
